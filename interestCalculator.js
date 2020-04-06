@@ -16,13 +16,10 @@ function interestCalculator() {
     let rate = 1;
     if (principal >= 2500 && time > 1 && time < 3) {
       rate = 3;
-      // console.log(rate);
     } else if (principal >= 2500 && time >= 3) {
       rate = 4;
-      // console.log(rate);
     } else if (principal < 2500 || time <= 1) {
       rate = 2;
-      //console.log(rate);
     }
     interest = (principal * rate * time) / 100;
     result = {
